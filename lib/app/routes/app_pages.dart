@@ -1,9 +1,13 @@
 import 'package:get/get.dart';
 
+import '../modules/biodata/bindings/biodata_binding.dart';
+import '../modules/biodata/views/biodata_view.dart';
 import '../modules/counter/bindings/counter_binding.dart';
 import '../modules/counter/views/counter_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
+import '../modules/output/bindings/output_binding.dart';
+import '../modules/output/views/output_view.dart';
 
 part 'app_routes.dart';
 
@@ -22,6 +26,21 @@ class AppPages {
       name: _Paths.COUNTER,
       page: () => CounterView(),
       binding: CounterBinding(),
+    ),
+    GetPage(
+      name: _Paths.BIODATA,
+      page: () => const BiodataView(),
+      binding: BiodataBinding(),
+    ),
+    GetPage(
+      name: _Paths.BIODATA,
+      page: () => const BiodataView(),
+      binding: BiodataBinding(),
+    ),
+    GetPage(
+      name: _Paths.OUTPUT,
+      page: () => OutputView(),
+      binding: OutputBinding(),
     ),
   ];
 }
